@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script src="./data.js"></script>
+    <script>
+        // Задание 2
+        // 1. Создать файл index.html.
+        // 2. Подключить data.js.
+        // 3. Сформировать контент из данных (картинка загловок и параграф).
+        // 4. Добавить данный контент в вёрстку.
+        // 5. * Добавить стили при необходимости (по желанию).
+        const data = JSON.parse(bd);
+        data.forEach(element => {
+            console.log(element.imgSrc);
+            const body = document.querySelector('body');
+            const div = document.createElement('div');
+            div.classList.add('sample');
+            
+            
+            const img = document.createElement('img');
+            img.classList.add('sample__img');
+            div.appendChild(img);
+            img.src = element.imgSrc;
+            img.alt = element.imgAlt;
+            
+            const h1 = document.createElement('h1');
+            h1.classList.add('sample__h1');
+            div.appendChild(h1);
+            h1.textContent = element.h1;
+            
+            const p = document.createElement('p');
+            p.classList.add('sample__p');
+            div.appendChild(p);
+            p.textContent = element.p;
+            body.appendChild(div);
+            element.style.forEach(e => {
+                img.style.cssText += e;
+                h1.style.cssText += e;
+                p.style.cssText += e;
+            });
+        });
+
+
+
+
+        // img.setAttribute('style', 'color:red');
+
+        // h1.setAttribute('style', 'color:green');
+
+        // p.setAttribute('style', 'color:blue');
+        const headHtml = document.querySelector('head');
+        const blockStyle = document.createElement('style');
+        blockStyle.textContent =
+            `
+.sample{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+} ;`
+        headHtml.appendChild(blockStyle);
+
+
+    </script>
+</body>
+
+</html>
