@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class="products centr">
+        <h3 class="products_h3">Fetured Items</h3>
+        <p class="products_p">Shop for items based on what we featured in this week</p>
+        <div class="products_list">
+            <article class="products_list_card">
+                <div class="products_list_hover">
+                    <img src="./img/Rectangle15copy.svg" alt="" class="products_list_card_img">
+                    <div class="products_list_card_button"><button class="products_list_card_button_border"><img src="./img/Forma1copy.svg" alt="" class="products_list_card_button_img"><span class="products_list_card_button_text">Add to Cart</span></button> </div>
+
+                </div>
+                <h4 class="products_list_card_name">ELLERY X M'O CAPSULE</h4>
+                <p class="products_list_card_description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="products_list_card_price">$52.00</p>
+
+            </article>
+            <article class="products_list_card">
+                <div class="products_list_hover">
+                    <img src="./img/Rectangle15copy(1).svg" alt="" class="products_list_card_img">
+                    <div class="products_list_card_button"><button class="products_list_card_button_border"><img src="./img/Forma1copy.svg" alt="" class="products_list_card_button_img"><span class="products_list_card_button_text">Add to Cart</span></button> </div>
+
+                </div>
+                <h4 class="products_list_card_name style_h4_product">ELLERY X M'O CAPSULE</h4>
+                <p class="products_list_card_description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="products_list_card_price">$52.00</p>
+
+            </article>
+            <article class="products_list_card">
+                <div class="products_list_hover">
+                    <img src="./img/Rectangle15copy(2).svg" alt="" class="products_list_card_img">
+                    <div class="products_list_card_button"><button class="products_list_card_button_border"><img src="./img/Forma1copy.svg" alt="" class="products_list_card_button_img"><span class="products_list_card_button_text">Add to Cart</span></button> </div>
+
+                </div>
+                <h4 class="products_list_card_name">ELLERY X M'O CAPSULE</h4>
+                <p class="products_list_card_description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="products_list_card_price">$52.00</p>
+
+            </article>
+            <article class="products_list_card">
+                <div class="products_list_hover">
+                    <img src="./img/Rectangle15copy(3).svg" alt="" class="products_list_card_img">
+                    <div class="products_list_card_button"><button class="products_list_card_button_border"><img src="./img/Forma1copy.svg" alt="" class="products_list_card_button_img"><span class="products_list_card_button_text">Add to Cart</span></button> </div>
+
+                </div>
+                <h4 class="products_list_card_name">ELLERY X M'O CAPSULE</h4>
+                <p class="products_list_card_description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="products_list_card_price">$52.00</p>
+
+            </article>
+            <article class="products_list_card">
+                <div class="products_list_hover">
+                    <img src="./img/Rectangle15copy(4).svg" alt="" class="products_list_card_img">
+                    <div class="products_list_card_button"><button class="products_list_card_button_border"><img src="./img/Forma1copy.svg" alt="" class="products_list_card_button_img"><span class="products_list_card_button_text">Add to Cart</span></button> </div>
+
+                </div>
+                <h4 class="products_list_card_name">ELLERY X M'O CAPSULE</h4>
+                <p class="products_list_card_description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="products_list_card_price">$52.00</p>
+
+            </article>
+            <article class="products_list_card">
+                <div class="products_list_hover">
+                    <img src="./img/Rectangle15copy(5).svg" alt="" class="products_list_card_img">
+                    <div class="products_list_card_button"><button class="products_list_card_button_border"><img src="./img/Forma1copy.svg" alt="" class="products_list_card_button_img"><span class="products_list_card_button_text">Add to Cart</span></button> </div>    
+
+                </div>
+                <h4 class="products_list_card_name">ELLERY X M'O CAPSULE</h4>
+                <p class="products_list_card_description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="products_list_card_price">$52.00</p>
+
+            </article>
+        </div>
+                <button class="button"><span class="button_text">Browse All Product</span></button>
+    </section>
+    <script src="./data.js"></script>
+    <script>
+        const productsBD = JSON.parse(bd);
+        const buttonProd = document.querySelector('.button');
+        buttonProd.addEventListener('click', function (e) {
+            const productsList = document.querySelector('.products_list');
+            const productsListStyle = window.getComputedStyle(productsList, null
+            );      
+            const sum = ((productsListStyle.gridTemplateRows.split(' ').length) * (productsListStyle.gridTemplateColumns.split(" ").length));
+       
+            const cardProd = document.querySelector('.products_list_card');
+        if (productsBD.length >= sum + 6){
+            for (let index = sum; index < (sum + 6); index++) {
+                
+                const newProdArt = document.createElement('article');
+                newProdArt.classList.add('products_list_card');
+    
+    
+                const divHover = document.createElement('div');
+                divHover.classList.add('products_list_hover');
+                const imgDivHover = document.createElement('img');
+                    imgDivHover.classList.add('products_list_card_img');
+                    imgDivHover.src = productsBD[index].imgCard;
+                    divHover.appendChild(imgDivHover);
+                    const ButDivHover = document.createElement('div');
+                    ButDivHover.classList.add('products_list_card_button');
+                    divHover.appendChild(ButDivHover);
+                        const buttonHover = document.createElement('button');
+                        buttonHover.classList.add('products_list_card_button_border');
+                        ButDivHover.appendChild(buttonHover);
+                            const buttonImg = document.createElement('img');
+                            buttonImg.classList.add('products_list_card_button_img');
+                            buttonImg.src = productsBD[index].imgButton;
+                            buttonHover.appendChild(buttonImg);
+                            const buttonSpan = document.createElement('span');
+                            buttonSpan.classList.add('products_list_card_button_text');
+                            buttonSpan.textContent = productsBD[index].buttonText;
+                            buttonHover.appendChild(buttonSpan);
+                newProdArt.appendChild(divHover);
+    
+    
+                const hCardName = document.createElement('h4');
+                hCardName.classList.add('products_list_card_name');
+                hCardName.textContent = productsBD[index].cardName;
+                newProdArt.appendChild(hCardName);
+    
+                const pCardDescription = document.createElement('p');
+                pCardDescription.classList.add('products_list_card_description');
+                pCardDescription.textContent = productsBD[index].carDes;
+                newProdArt.appendChild(pCardDescription);
+    
+                const pCardPrice = document.createElement('p');
+                pCardPrice.classList.add('products_list_card_price');
+                pCardPrice.textContent = productsBD[index].cardPrice;
+                newProdArt.appendChild(pCardPrice);
+    
+                productsList.appendChild(newProdArt);
+            }
+        }
+        else{
+            for (let index = sum; index < productsBD.length; index++) {
+                const newProdArt = document.createElement('article');
+                newProdArt.classList.add('products_list_card');
+    
+    
+                const divHover = document.createElement('div');
+                divHover.classList.add('products_list_hover');
+                const imgDivHover = document.createElement('img');
+                    imgDivHover.classList.add('products_list_card_img');
+                    imgDivHover.src = productsBD[index].imgCard;
+                    divHover.appendChild(imgDivHover);
+                    const ButDivHover = document.createElement('div');
+                    ButDivHover.classList.add('products_list_card_button');
+                    divHover.appendChild(ButDivHover);
+                        const buttonHover = document.createElement('button');
+                        buttonHover.classList.add('products_list_card_button_border');
+                        ButDivHover.appendChild(buttonHover);
+                            const buttonImg = document.createElement('img');
+                            buttonImg.classList.add('products_list_card_button_img');
+                            buttonImg.src = productsBD[index].imgButton;
+                            buttonHover.appendChild(buttonImg);
+                            const buttonSpan = document.createElement('span');
+                            buttonSpan.classList.add('products_list_card_button_text');
+                            buttonSpan.textContent = productsBD[index].buttonText;
+                            buttonHover.appendChild(buttonSpan);
+                newProdArt.appendChild(divHover);
+    
+    
+                const hCardName = document.createElement('h4');
+                hCardName.classList.add('products_list_card_name');
+                hCardName.textContent = productsBD[index].cardName;
+                newProdArt.appendChild(hCardName);
+    
+                const pCardDescription = document.createElement('p');
+                pCardDescription.classList.add('products_list_card_description');
+                pCardDescription.textContent = productsBD[index].carDes;
+                newProdArt.appendChild(pCardDescription);
+    
+                const pCardPrice = document.createElement('p');
+                pCardPrice.classList.add('products_list_card_price');
+                pCardPrice.textContent = productsBD[index].cardPrice;
+                newProdArt.appendChild(pCardPrice);
+    
+                productsList.appendChild(newProdArt);
+
+                buttonProd.style.display = 'none';
+            }
+        }
+});
+
+
+    </script>
+</body>
+
+</html>
