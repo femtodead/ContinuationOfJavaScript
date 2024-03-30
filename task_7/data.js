@@ -7,7 +7,7 @@ const bd = `
     "carDes" : "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
     "cardPrice" : "$52.00",
     "cardColor":"Red",
-    "cardSize":""
+    "cardSize":"XL"
 },
 {
     "imgCard" : "./img/Rectangle15copy(1).svg",
@@ -17,7 +17,7 @@ const bd = `
     "carDes" : "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
     "cardPrice" : "$52.00",
     "cardColor":"Grey",
-    "cardSize":""
+    "cardSize":"XL"
 },
 {
     "imgCard" : "./img/Rectangle15copy(2).svg",
@@ -27,7 +27,7 @@ const bd = `
     "carDes" : "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
     "cardPrice" : "$52.00",
     "cardColor":"Light lue ",
-    "cardSize":""
+    "cardSize":"XL"
 },
 {
     "imgCard" : "./img/Rectangle15copy(3).svg",
@@ -37,7 +37,7 @@ const bd = `
     "carDes" : "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
     "cardPrice" : "$52.00",
     "cardColor":"Dark blue",
-    "cardSize":""
+    "cardSize":"XL"
 },
 {
     "imgCard" : "./img/Rectangle15copy(4).svg",
@@ -47,7 +47,7 @@ const bd = `
     "carDes" : "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
     "cardPrice" : "$52.00",
     "cardColor":"Green",
-    "cardSize":""
+    "cardSize":"XL"
 },
 {
     "imgCard" : "./img/Rectangle15copy(5).svg",
@@ -57,7 +57,7 @@ const bd = `
     "carDes" : "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
     "cardPrice" : "$52.00",
     "cardColor":"Yellow",
-    "cardSize":""
+    "cardSize":"XL"
 },
 {
     "imgCard" : "./img/Rectangle15copy.svg",
@@ -67,7 +67,7 @@ const bd = `
     "carDes" : "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
     "cardPrice" : "$1.00",
     "cardColor":"Pink",
-    "cardSize":""
+    "cardSize":"XL"
 },
 {
     "imgCard" : "./img/Rectangle15copy(1).svg",
@@ -77,7 +77,7 @@ const bd = `
     "carDes" : "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
     "cardPrice" : "$2.00",
     "cardColor":"Orange",
-    "cardSize":""
+    "cardSize":"XL"
 },
 {
     "imgCard" : "./img/Rectangle15copy(2).svg",
@@ -87,7 +87,7 @@ const bd = `
     "carDes" : "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
     "cardPrice" : "$3.00",
     "cardColor":"Brown",
-    "cardSize":""
+    "cardSize":"XL"
 },
 {
     "imgCard" : "./img/Rectangle15copy(3).svg",
@@ -97,7 +97,7 @@ const bd = `
     "carDes" : "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
     "cardPrice" : "$4.00",
     "cardColor":"White",
-    "cardSize":""
+    "cardSize":"XL"
 },
 {
     "imgCard" : "./img/Rectangle15copy(4).svg",
@@ -107,7 +107,7 @@ const bd = `
     "carDes" : "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
     "cardPrice" : "$5.00",
     "cardColor":"Black",
-    "cardSize":""
+    "cardSize":"XL"
 },
 {
     "imgCard" : "./img/Rectangle15copy(5).svg",
@@ -117,7 +117,7 @@ const bd = `
     "carDes" : "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
     "cardPrice" : "$6.00",
     "cardColor":"Violet",
-    "cardSize":""
+    "cardSize":"XL"
 },
 {
     "imgCard" : "./img/Rectangle15copy.svg",
@@ -127,7 +127,7 @@ const bd = `
     "carDes" : "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
     "cardPrice" : "$7.00",
     "cardColor":"Gold",
-    "cardSize":""
+    "cardSize":"XL"
 },
 {
     "imgCard" : "./img/Rectangle15copy(1).svg",
@@ -137,7 +137,7 @@ const bd = `
     "carDes" : "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
     "cardPrice" : "$8.00",
     "cardColor":"Silver",
-    "cardSize":""
+    "cardSize":"XL"
 }]
 
 `
